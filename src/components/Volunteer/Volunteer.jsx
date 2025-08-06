@@ -112,13 +112,13 @@ export default function Volunteer() {
 
       {/* Volunteer Role Cards */}
       <section>
-        <h3 className="text-2xl font-semibold mb-6 text-green-700">Volunteer Roles</h3>
+        <h3 className="text-2xl text-center font-semibold mb-6 text-green-700">Volunteer Roles</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {roles.map((role, i) => (
             <div key={i} className="relative group perspective h-52">
               <div className="w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl shadow-md">
                 {/* Front */}
-                <div className="absolute w-full h-full backface-hidden bg-green-100 rounded-xl flex flex-col items-center justify-center p-4 text-center">
+                <div className="absolute w-full h-full backface-hidden bg-green-300 rounded-xl flex flex-col items-center justify-center p-4 text-center">
                   <h4 className="text-lg font-bold text-green-700">{role.title}</h4>
                   <p className="mt-2 text-sm">{role.front}</p>
                 </div>

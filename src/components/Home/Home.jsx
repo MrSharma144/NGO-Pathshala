@@ -21,7 +21,7 @@ const Achievement = ({ label, end }) => {
       className="bg-white rounded-2xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center"
     >
       <animated.h3 className="text-4xl md:text-5xl font-extrabold text-green-700 drop-shadow-md">
-        {props.number.to((n) => Math.floor(n))}
+        {props.number.to((n) => `${Math.floor(n)}+`)}
       </animated.h3>
       <p className="mt-2 text-lg font-medium text-gray-700">{label}</p>
     </div>
@@ -123,13 +123,30 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-green-600 py-16 text-center text-white">
-        <h2 className="text-4xl font-bold mb-4">Join Us in Making a Difference</h2>
-        <p className="text-lg mb-6">Your contribution can change a child's life forever.</p>
-        <a href="/donate" className="bg-white text-green-600 font-semibold py-3 px-8 rounded-lg hover:bg-green-100 transition">
-          💚 Donate Today
-        </a>
-      </section>
+      
+<section className="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat flex items-center justify-center" style={ {backgroundImage:`url(${kids1})` }}>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-green-400/40 backdrop-blur-sm z-0"></div>
+
+  {/* Content */}
+  <div className="relative z-10 max-w-3xl mx-auto text-center px-6 py-10 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md mb-4">
+      Transform Lives with One Click
+    </h2>
+    <p className="text-lg text-gray-200 mb-8 leading-relaxed">
+      Your support gives children hope, education, and a future they deserve. 
+      Together, we can break the cycle of poverty.
+    </p>
+
+    <a
+      href="/donate"
+      className="inline-block px-10 py-3 bg-gradient-to-r from-yellow-300 to-yellow-500 text-green-900 font-bold text-lg rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300"
+    >
+      💚 Donate Now
+    </a>
+  </div>
+</section>
+
 
     </div>
   );

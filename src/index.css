@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@import 'animate.css';
 
 .perspective {
   perspective: 1000px;

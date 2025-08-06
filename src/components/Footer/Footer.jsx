@@ -1,41 +1,42 @@
-import React from 'react';
-import 'animate.css';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Optional, if using React Router
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-green-200 via-green-300 to-green-400 backdrop-blur-md text-gray-900 py-16 px-8 animate__animated animate__fadeInUp shadow-2xl">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-        {/* Brand Section */}
-        <div className="space-y-4">
-          <h2 className="text-4xl font-extrabold tracking-tight text-green-800">Pathshala</h2>
-          <p className="text-lg font-medium leading-relaxed">
-            Empowering underprivileged children through quality education and compassion. Join us to spread light and opportunity.
+    <footer className="bg-green-700 text-white px-4 py-5">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        {/* Left: Logo + Tagline */}
+        <div className="text-center md:text-left">
+          <h2 className="text-xl font-bold">Pathshala</h2>
+          <p className="text-gray-300 text-sm">Empowering lives through education & care.</p>
+        </div>
+
+        {/* Center: Navigation Links */}
+        <div className="flex flex-wrap justify-center gap-5 text-sm font-medium">
+          <a href="/about" className="hover:text-yellow-300">About</a>
+          <a href="/volunteer" className="hover:text-yellow-300">Volunteer</a>
+          <a href="/donate" className="hover:text-yellow-300">Donate</a>
+          <a href="/contact" className="hover:text-yellow-300">Contact</a>
+        </div>
+
+        {/* Right: Contact Info with Icons */}
+        <div className="text-center md:text-right text-sm text-gray-300 space-y-1">
+          <p className="flex items-center justify-center md:justify-end gap-2">
+            <FaEnvelope size={16} /> <a href="mailto:pathshala.ngo@email.com" className="hover:text-yellow-300">pathshala.ngo@email.com</a>
           </p>
-        </div>
-
-        {/* Navigation Links */}
-        <div>
-          <h3 className="text-2xl font-bold text-green-700 mb-4">Quick Links</h3>
-          <ul className="space-y-3 text-lg font-semibold">
-            <li><a href="#about" className="hover:underline hover:text-green-900 transition-all">About</a></li>
-            <li><a href="#volunteer" className="hover:underline hover:text-green-900 transition-all">Volunteer</a></li>
-            <li><a href="#donate" className="hover:underline hover:text-green-900 transition-all">Donate</a></li>
-            <li><a href="#contact" className="hover:underline hover:text-green-900 transition-all">Contact</a></li>
-          </ul>
-        </div>
-
-        {/* Contact Info */}
-        <div className="space-y-3">
-          <h3 className="text-2xl font-bold text-green-700 mb-4">Contact</h3>
-          <p className="text-lg font-medium">📧 <a href="mailto:info@pathshala.org" className="underline">info@pathshala.org</a></p>
-          <p className="text-lg font-medium">📞 <a href="tel:+919999999999" className="underline">+91 99999 99999</a></p>
-          <p className="text-lg font-medium">📍 New Delhi, India</p>
+          <p className="flex items-center justify-center md:justify-end gap-2">
+            <FaPhone size={16} /> <a href="tel:+911234567890" className="hover:text-yellow-300">+91 12345 67890</a>
+          </p>
+          <p className="flex items-center justify-center md:justify-end gap-2">
+            <FaMapMarkerAlt size={16} /> New Delhi, India
+          </p>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="mt-14 border-t border-green-400 pt-6 text-center text-md font-semibold text-green-800 tracking-wide">
-        © {new Date().getFullYear()} Pathshala. All rights reserved.
+      {/* Bottom note */}
+      <div className="text-center text-xs text-gray-400 mt-3">
+        © {new Date().getFullYear()} Pathshala NGO. All rights reserved.
       </div>
     </footer>
   );

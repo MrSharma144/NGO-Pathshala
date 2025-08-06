@@ -54,9 +54,9 @@ const Achievement = ({ label, end }) => {
     <div
       ref={ref}
       className="bg-white rounded-2xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center"
-    >
+    > 
       <animated.h3 className="text-4xl md:text-5xl font-extrabold text-green-700 drop-shadow-md">
-        {props.number.to((n) => Math.floor(n))}
+        {props.number.to((n) => `${Math.floor(n)}+`)}
       </animated.h3>
       <p className="mt-2 text-lg font-medium text-gray-700">{label}</p>
     </div>
