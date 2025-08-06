@@ -3,6 +3,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
+import {Link} from 'react-router-dom'
 import kids1 from '../../assets/kids2.jpg'
 import kids2 from '../../assets/kids4.jpg'
 
@@ -137,13 +138,14 @@ const Home = () => {
       Your support gives children hope, education, and a future they deserve. 
       Together, we can break the cycle of poverty.
     </p>
-
-    <a
-      href="/donate"
-      className="inline-block px-10 py-3 bg-gradient-to-r from-yellow-300 to-yellow-500 text-green-900 font-bold text-lg rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300"
-    >
-      💚 Donate Now
-    </a>
+    <div>
+  <Link
+    to="/donate"
+    className="inline-block px-10 py-3 bg-gradient-to-r from-yellow-300 to-yellow-500 text-green-900 font-bold text-lg rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300"
+  >
+    💚 Donate Now
+  </Link>
+  </div>
   </div>
 </section>
 

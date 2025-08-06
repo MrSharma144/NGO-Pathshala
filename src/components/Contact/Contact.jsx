@@ -283,8 +283,8 @@ const Contact = () => {
       id="contact"
     >
       {/* Decorative background circles */}
-      <div className="absolute top-10 left-10 w-40 h-40 bg-green-300 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-10 right-10 w-64 h-64 bg-green-500 rounded-full opacity-10 blur-3xl animate-pulse"></div>
+      <div className="absolute top-10 left-10 w-40 h-40 bg-green-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-10 right-10 w-64 h-64 bg-green-700 rounded-full opacity-10 blur-3xl animate-pulse"></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-4xl font-bold text-center text-green-700 mb-12 drop-shadow-lg">
@@ -296,7 +296,7 @@ const Contact = () => {
           <div className="md:w-1/2 space-y-6">
             <div className="rounded-xl overflow-hidden shadow-xl">
               <iframe
-                className="w-full h-48 md:h-60"
+                className="w-full h-40 md:h-80"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14018.500943680379!2d77.2090218!3d28.6139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce377c2dc68cb%3A0xf8a34b1479c3c8b6!2sShivpuri%2C%20Delhi!5e0!3m2!1sen!2sin!4v1691700000000!5m2!1sen!2sin"
                 allowFullScreen=""
                 loading="lazy"
