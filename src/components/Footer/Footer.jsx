@@ -14,10 +14,10 @@ const Footer = () => {
 
         {/* Center: Navigation Links */}
         <div className="flex flex-wrap justify-center gap-5 text-sm font-medium">
-          <a href="/about" className="hover:text-yellow-300">About</a>
-          <a href="/volunteer" className="hover:text-yellow-300">Volunteer</a>
-          <a href="/donate" className="hover:text-yellow-300">Donate</a>
-          <a href="/contact" className="hover:text-yellow-300">Contact</a>
+            <Link to="/about" className="hover:text-yellow-300">About</Link>
+            <Link to="/volunteer" className="hover:text-yellow-300">Volunteer</Link>
+            <Link to="/donate" className="hover:text-yellow-300">Donate</Link>
+            <Link to="/contact" className="hover:text-yellow-300">Contact</Link>
         </div>
 
         {/* Right: Contact Info with Icons */}
