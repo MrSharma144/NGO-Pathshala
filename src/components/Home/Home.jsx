@@ -44,9 +44,9 @@ const Home = () => {
             <p className="text-lg mb-6 text-gray-700">
               At Pathshala, we believe that every child deserves the right to quality education. Join us in transforming lives.
             </p>
-            <a href="/donate" className="bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg text-lg transition">
+            <Link to="/donate" className="bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg text-lg transition">
               💚 Donate Now
-            </a>
+            </Link>
           </div>
           <div className="md:w-1/2">
             <img
