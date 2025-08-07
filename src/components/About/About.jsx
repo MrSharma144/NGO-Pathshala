@@ -8,6 +8,7 @@ import volunteer1 from '../../assets/volunteer1.jpg';
 import volunteer2 from '../../assets/volunteer2.jpg';
 import volunteer3 from '../../assets/volunteer3.jpg';
 import volunteer4 from '../../assets/volunteer4.jpg'; 
+import {Link} from 'react-router-dom'
 
 const teamMembers = [
   {
@@ -83,17 +84,17 @@ export default function About() {
         Our vibrant classrooms are not just places to study—they’re safe spaces filled with joy, curiosity, and creativity.
         <br /><br />
         At Pathshala, volunteers, donors, and educators come together as a family to nurture potential and create real impact. 
-        Whether it's a drawing lesson, a storytelling circle, or a health checkup day, every moment at Pathshala is designed 
+        {/* Whether it's a drawing lesson, a storytelling circle, or a health checkup day, every moment at Pathshala is designed 
         to uplift and inspire. We are not just changing lives—we are planting seeds of hope, compassion, and resilience in 
-        the hearts of tomorrow’s leaders.
+        the hearts of tomorrow’s leaders. */}
         <br /><br />
         Join us in rewriting destinies. Be a part of something truly magical.
       </p>
 
       <div className="mt-10 flex justify-center">
-        <button className="px-6 py-3 text-white bg-green-500 hover:bg-green-600 font-semibold rounded-full shadow-md transition duration-200 hover:scale-105">
+        <Link  to="/donate" className="px-6 py-3 text-white bg-green-500 hover:bg-green-600 font-semibold rounded-full shadow-md transition duration-200 hover:scale-105">
           Become a Volunteer
-        </button>
+        </Link>
       </div>
     </div>
   </div>
